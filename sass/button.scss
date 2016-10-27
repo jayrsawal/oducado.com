@@ -1,0 +1,17 @@
+.btn {
+    border-radius: 0;
+    border: 3px solid $theme-active;
+    padding: 15px 50px;
+    text-align: center;
+    
+    color: $theme-active;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    &:hover {
+        background-color: $theme-active;
+        color: $theme-primary;
+        border: 3px solid $theme-active;
+    }
+}

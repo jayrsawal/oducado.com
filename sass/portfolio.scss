@@ -1,0 +1,73 @@
+#portfolio {
+    min-height: 500px;
+    background-color: $theme-ui;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #8EAEB3), color-stop(1, #638B8F));
+    background-image: -o-linear-gradient(top, #8EAEB3 0%, #638B8F 100%);
+    background-image: -moz-linear-gradient(top, #8EAEB3 0%, #638B8F 100%);
+    background-image: -webkit-linear-gradient(top, #8EAEB3 0%, #638B8F 100%);
+    background-image: -ms-linear-gradient(top, #8EAEB3 0%, #638B8F 100%);
+    background-image: linear-gradient(to top, #8EAEB3 0%, #638B8F 100%);
+    padding: 10% 0 12% 0;
+    h2 {
+        font-size: 4em;
+        font-weight: 700;
+        color: $theme-active;
+        margin: 0 0;
+        padding: 0px 0px 0px 0px;
+    }
+    h3 {
+        padding: 0px 0px 3% 0px;
+        margin: 0 0;
+        font-weight: 600;
+    }
+    p {
+        padding-top: 5%;
+        font-weight: 100px;
+    }
+}
+
+.portfolio-item {
+    color: $theme-font;
+    box-shadow: 2px 10px 15px rgba(50, 50, 50, 0.2);
+    background-color: $theme-active;
+    height: 275px;
+    width: 275px;
+    margin: 1%;
+    padding: 25px;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    &:hover {
+        cursor: pointer;
+    }
+    img {
+        position: absolute;
+        top: -25px;
+        left: -85px;
+        width: 435px;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        &:hover {
+            left: -115px;
+            width: 500px;
+        }
+    }
+    span {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 25px;
+        left: 0px;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 600;
+        background: rgba($theme-active, 0.8);
+        pointer-events: none;
+        i {
+            font-style: normal;
+            font-size: .8em;
+            font-weight: 100;
+            color: rgba(white, 0.2);
+        }
+    }
+}
